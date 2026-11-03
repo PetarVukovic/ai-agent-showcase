@@ -1,0 +1,9 @@
+langgraph
+langgraph-cli[inmem]
+langchain-openai
+fastapi
+python-multipart
+pymupdf
+python-dotenv
+pytest
+google-genai

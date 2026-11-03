@@ -1,0 +1,1 @@
+{"dependencies":["."],"graphs":{"proposal":"./backend/graph.py:graph"},"env":".env","http":{"app":"./backend/api.py:app"}}

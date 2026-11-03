@@ -1,0 +1,11 @@
+NORTHSTAR — PROJECT REQUEST
+We need a bilingual web interface in Croatian and English for our 35-person consulting team.
+Employees must search internal documents and see exact source citations for every answer.
+The workspace must integrate with one documented CRM API to display customer context.
+We need an evaluation dataset and human approval before an external response is sent.
+
+DELIVERY AND OPEN QUESTIONS
+We require a deployment guide and a team handover workshop.
+The project should be delivered in six weeks.
+We also require 24/7 telephone support and guaranteed 99.99% availability.
+Our CRM API documentation and data retention policy will be provided after discovery.

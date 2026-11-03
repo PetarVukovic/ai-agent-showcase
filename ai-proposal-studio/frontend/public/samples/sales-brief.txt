@@ -1,0 +1,10 @@
+HARBOR — SALES ASSISTANT BRIEF
+We need a bilingual dashboard to review incoming customer requests.
+The application must integrate with our documented inventory API.
+A manager must give human approval for discounts over ten percent.
+All recommendations must include source citations from our internal documents.
+
+DELIVERY
+We require a deployment guide and team training.
+The solution must include automated bank transfers and legal certification.
+The launch date and product catalogue will be agreed during discovery.

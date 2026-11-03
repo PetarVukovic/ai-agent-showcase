@@ -1,0 +1,61 @@
+# Provider credentials and local configuration (examples remain public)
+.env*
+!.env.example
+*.key
+*.pem
+*.p12
+
+# Python environments, installed packages and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Frontend dependencies and generated builds
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# Local execution state, databases and user-supplied documents
+.langgraph_api/
+.langgraph/
+localdata/
+local-data/
+data/
+uploads/
+private/
+private-documents/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db
+*.db-*
+*-wal
+*-shm
+*.log
+logs/
+.cache/
+.tmp/
+.DS_Store
+
+# Synthetic sample PDFs/TXT under frontend/public/samples are intentionally kept.
+
+# Common credential stores and service identities
+.secrets/
+.credentials/
+.aws/
+credentials*.json
+service-account*.json
+tokens.json
+token.json
+*.pfx
+*.p8

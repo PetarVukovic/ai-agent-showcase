@@ -1,0 +1,87 @@
+{
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "BriefPanel": {
+        "$ref": "#/$defs/BriefPanel"
+      },
+      "Brief": {
+        "$ref": "#/$defs/Brief"
+      },
+      "Notice": {
+        "$ref": "#/$defs/Notice"
+      }
+    },
+    "required": [
+      "BriefPanel",
+      "Brief",
+      "Notice"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+      "BriefPanel": {
+        "type": "object",
+        "properties": {
+          "children": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Brief"
+                },
+                {
+                  "$ref": "#/$defs/Notice"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "children"
+        ],
+        "additionalProperties": false,
+        "description": "Root container for a quote explanation."
+      },
+      "Brief": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "body"
+        ],
+        "additionalProperties": false,
+        "description": "A short factual business summary of the current quote. No invented facts."
+      },
+      "Notice": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "tone": {
+            "type": "string",
+            "enum": [
+              "neutral",
+              "warning"
+            ]
+          }
+        },
+        "required": [
+          "text",
+          "tone"
+        ],
+        "additionalProperties": false,
+        "description": "A brief constraint or next step. Use neutral for demo disclosure, warning for a real policy issue."
+      }
+    }
+  },
+  "root": "BriefPanel"
+}

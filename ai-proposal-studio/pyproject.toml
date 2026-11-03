@@ -1,0 +1,10 @@
+[project]
+name="ai-proposal-studio"
+version="0.1.0"
+requires-python=">=3.11"
+dependencies=["langgraph","langchain-openai","fastapi","python-multipart","pymupdf","python-dotenv","google-genai"]
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+[tool.setuptools.packages.find]
+include=["backend*"]
